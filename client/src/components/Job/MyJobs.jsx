@@ -16,7 +16,7 @@ const MyJobs = () =>{
   useEffect(() =>{
     const fetchJobs = async() =>{
       try {
-        const {data} = await axios.get("https://jobhive-job-portal-application.onrender.com/api/v1/job/getmyjobs",
+        const {data} = await axios.get("https://jobportal-xb3i.onrender.com/api/v1/job/getmyjobs",
         {withCredentials: true});
         setMyJobs(data.myjobs);
       } catch (error) {
@@ -45,7 +45,7 @@ const MyJobs = () =>{
   // function for editing job
   const handleUpdateJob = async(jobId) => {
      const updatedJob = myJobs.find(job => job._id === jobId);
-     await axios.put(`https://jobhive-job-portal-application.onrender.com/api/v1/job/update/${jobId}`, updatedJob, {
+     await axios.put(`https://jobportal-xb3i.onrender.com/api/v1/job/update/${jobId}`, updatedJob, {
       withCredentials: true
     })
     .then(res => {
@@ -63,7 +63,7 @@ const handleDeleteJob = async (jobId) => {
   const confirmation = window.confirm("Are you sure you want to delete?");
   if (confirmation) {
     await axios
-      .delete(`https://jobhive-job-portal-application.onrender.com/api/v1/job/delete/${jobId}`, {
+      .delete(`https://jobportal-xb3i.onrender.com/api/v1/job/delete/${jobId}`, {
         withCredentials: true,
       })
       .then((res) => {

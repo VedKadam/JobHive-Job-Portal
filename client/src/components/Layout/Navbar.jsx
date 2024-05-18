@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get("https://jobhive-job-portal-application.onrender.com/api/v1/user/logout", { withCredentials: true });
+      const response = await axios.get("https://jobportal-xb3i.onrender.com/api/v1/user/logout", { withCredentials: true });
       toast.success(response.data.message);
       setIsAuthorized(false);
       navigateTo("/login");

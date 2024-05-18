@@ -33,7 +33,7 @@ const PostJob = () =>{
       setFixedSalary("");
     }
 
-    await axios.post("https://jobhive-job-portal-application.onrender.com/api/v1/job/post", fixedSalary.length >= 4 ? {title, category, country, city, location, fixedSalary, description} : {title, category, country, city, location, salaryFrom, salaryTo, description}, {withCredentials: true, headers:{
+    await axios.post("https://jobportal-xb3i.onrender.com/api/v1/job/post", fixedSalary.length >= 4 ? {title, category, country, city, location, fixedSalary, description} : {title, category, country, city, location, salaryFrom, salaryTo, description}, {withCredentials: true, headers:{
       "Content-Type": "application/json",
     },})
   .then((res) => toast.success(res.data.message))

@@ -34,8 +34,14 @@ const Register = () => {
 		}
    
     try {
-      const { data } = await axios.post("https://jobhive-job-portal-application.onrender.com/api/v1/user/register", { name, email, password, phone, role }, {
+      const { data } = await axios.post("https://jobportal-xb3i.onrender.com/api/v1/user/register", { name, email, password, phone, role }, {
         withCredentials: true, 
+        headers: {
+          "Access-Control-Allow-Credentials": "true" ,
+          "Access-Control-Allow-Origin": "*" ,
+          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
         // headers: {
         //   "Content-Type": "application/json",
         // },

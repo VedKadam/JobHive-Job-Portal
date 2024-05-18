@@ -18,7 +18,7 @@ const MyApplication = () =>{
     try {
       if (user && user.role === "Employer") {
         axios
-          .get("https://jobhive-job-portal-application.onrender.com/api/v1/application/employer/getall", {
+          .get("https://jobportal-xb3i.onrender.com/api/v1/application/employer/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -26,7 +26,7 @@ const MyApplication = () =>{
           });
       } else {
         axios
-          .get("https://jobhive-job-portal-application.onrender.com/api/v1/application/jobseeker/getall", {
+          .get("https://jobportal-xb3i.onrender.com/api/v1/application/jobseeker/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -45,7 +45,7 @@ const MyApplication = () =>{
   const deleteApplication = async(id) => {
     try {
       await axios
-        .delete(`https://jobhive-job-portal-application.onrender.com/api/v1/application/delete/${id}`, {
+        .delete(`https://jobportal-xb3i.onrender.com/api/v1/application/delete/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
