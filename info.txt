@@ -1,0 +1,8 @@
+config folder for storing environment variables
+controllers user controller, job controller, application controller
+database for db connection
+middlewares folder is used for authentication, case checking
+models folder to create schema
+routes folder 
+utils folder
+
