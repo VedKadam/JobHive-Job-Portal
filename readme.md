@@ -6,9 +6,7 @@ JobHive is a comprehensive job portal application where employers can post, dele
 ```
 Watch the video demo to get a quick overview of the platform's interface and functionalities.
 ```
-https://github.com/VedKadam/Jobhive-Job-Portal/assets/86007124/de9f7380-26ff-44b1-81df-49b610efd27a
-
-
+https://github.com/VedKadam/Jobhive-Job-Portal/assets/86007124/f025e256-0818-416b-8896-87ff15706d4c
 
 ## Features
 
