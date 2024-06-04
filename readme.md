@@ -2,6 +2,14 @@
 
 JobHive is a comprehensive job portal application where employers can post, delete, and update job listings, and job seekers can find new job opportunities. This project demonstrates proficiency in the MERN stack (MongoDB, Express.js, React, and Node.js) and showcases the ability to create full-stack web applications.
 
+## Video Demo
+```
+Watch the video demo to get a quick overview of the platform's interface and functionalities.
+```
+https://github.com/VedKadam/Jobhive-Job-Portal/assets/86007124/de9f7380-26ff-44b1-81df-49b610efd27a
+
+
+
 ## Features
 
 - Secure JWT-based authentication
